@@ -16,12 +16,19 @@ padding:15px 40px;
 display:flex;
 justify-content:space-between;
 align-items:center;
+position:sticky;
+top:0;
+z-index:100;
 }
 
 nav a{
 color:white;
 text-decoration:none;
 margin-left:20px;
+}
+
+nav a:hover{
+color:rgb(255,215,0);
 }
 
 .container{
@@ -53,7 +60,7 @@ cursor:pointer;
 
 .products{
 display:grid;
-grid-template-columns:repeat(4,1fr);
+grid-template-columns:repeat(3,1fr);
 gap:20px;
 }
 
@@ -81,13 +88,33 @@ margin-top:10px;
 }
 
 .watch p{
-margin:8px 0;
+margin:8px;
 }
 
-.logo{
-    width:40px;
-    height:40px;
-    border-radius:50%;
-    margin-right:10px;
-    vertical-align:middle;
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:10px;
+}
+
+.top{
+flex-direction:column;
+gap:10px;
+}
+
+.products{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:500px){
+
+.products{
+grid-template-columns:1fr;
+}
+
 }
