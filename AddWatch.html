@@ -31,13 +31,13 @@
 
 <h1>Add New Watch</h1>
 
-<form>
+<form id="watchForm" >
 
 <label>Watch Name</label>
-<input type="text" placeholder="Enter Watch Name">
+<input type="text" id="watchName" placeholder="Enter Watch Name">
 
 <label>Brand</label>
-<select>
+<select id="brand" >
 <option>Select Brand</option>
 <option>Rolex</option>
 <option>Casio</option>
@@ -52,16 +52,16 @@
 </select>
 
 <label>Price</label>
-<input type="number" placeholder="Enter Price">
+<input type="number" id="price" placeholder="Enter Price">
 
 <label>Stock</label>
-<input type="number" placeholder="Enter Stock Quantity">
+<input type="number" id="stock" placeholder="Enter Stock Quantity">
 
 <label>Supplier</label>
-<input type="text" placeholder="Enter Supplier Name">
+<input type="text" id="supplier" placeholder="Enter Supplier Name">
 
 <label>Watch Image</label>
-<input type="file">
+<input type="file" id="image" >
 
 <button type="submit">Add Watch</button>
 
@@ -74,6 +74,8 @@
 <p>© 2026 Imperial Watches. All Rights Reserved.</p>
 
 </footer>
+
+<script src="AddWatch.js" ></script>
 
 </body>
 

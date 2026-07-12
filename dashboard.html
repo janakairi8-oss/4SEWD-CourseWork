@@ -39,7 +39,7 @@
         <div class="card">
           <i class="fa-regular fa-clock icon"></i>
           <h3>Total Watches</h3>
-          <h2>50</h2>
+          <h2 id="totalWatches">0</h2>
         </div>
 
         <div class="card">
@@ -68,6 +68,7 @@
 
         <div class="table-responsive">
           <table>
+            <thead>
             <tr>
               <th>ID</th>
               <th>Image</th>
@@ -77,6 +78,9 @@
               <th>Stock</th>
               <th>Status</th>
             </tr>
+            </thead>
+
+            <tbody id="watchTable"></tbody>
 
             <tr>
               <td>1</td>
@@ -145,5 +149,8 @@
     <footer>
       <p>© 2026 Imperial Watches. All Rights Reserved.</p>
     </footer>
+
+    <script src="dashboard.js" ></script>
+
   </body>
 </html>
