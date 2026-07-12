@@ -124,6 +124,9 @@ color:rgb(231,76,60);
 font-weight:bold;
 }
 
+.table-responsive{
+overflow-x:auto;
+}
 
 @media(max-width:750px){
 
